@@ -1,3 +1,10 @@
-# Template for creating your own website
+# lacxy05.github.io
 
-This is a template for creating your own website. It is based on the [Beautiful Jekyll theme](https://github.com/daattali/beautiful-jekyll). See instruction on how to setup [here](https://hdbc-17705110-mdbs.github.io/HandsOnLabs/hol1.html).
+Personal website of Laia Colomé Xicoy, Biomedical Engineer and MSc student in Health Data Science.
+
+Built with [Beautiful Jekyll](https://github.com/daattali/beautiful-jekyll) and hosted on GitHub Pages.
+
+## Contents
+
+- **About Me** — background, education, experience, and selected projects
+- **Blog** — written entries on health data science, cloud computing, and related topics
