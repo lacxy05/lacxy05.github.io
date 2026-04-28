@@ -30,7 +30,7 @@ Running on the cloud means users do not need to install anything or manage softw
 
 On the technical side, the platform uses a task execution strategy that keeps common dependencies preloaded in memory, so basic plots return results in seconds rather than making you wait for the environment to spin up from scratch each time. It also has a command line tool that mirrors the web interface, useful for researchers who want to automate batch processing while still using the same underlying logic.
 
-{: .box-success}
+{: .box-note}
 **Reproducibility by design:** Each task is saved as a portable file recording the data, parameters, and output. You can reload it later and get the exact same figure, in the browser or from the terminal. For a research context where auditability matters, that is a thoughtful design choice.
 
 ![Hiplot heatmap plugin workflow](/images/hiplot-heatmap-workflow.png){: .mx-auto.d-block :}
