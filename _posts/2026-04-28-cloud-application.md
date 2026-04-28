@@ -14,7 +14,7 @@ Biomedical research today is defined by data. Modern studies in genomics, transc
 
 ## What is Hiplot?
 
-[Hiplot](https://hiplot.cn/) is a web based platform for biomedical data visualization. In plain terms, it lets researchers upload tabular data and turn it into publication ready figures — heatmaps, boxplots, survival curves, pathway enrichment plots — without writing a single line of code. It currently offers over **240 visualization plugins** covering basic statistics, multi omics data, and clinical models.
+[Hiplot](https://hiplot.cn/) is a web based platform for biomedical data visualization. In plain terms, it lets researchers upload tabular data and turn it into publication ready figures (heatmaps, boxplots, survival curves, pathway enrichment plots) without writing a single line of code. It currently offers over **240 visualization plugins** covering basic statistics, multi omics data, and clinical models.
 
 What makes it interesting from a cloud computing perspective is not just that it runs online, but *why* it was built that way and what specific problems that solves.
 
@@ -26,15 +26,14 @@ These are real friction points. In practice, figures get revised constantly thro
 
 ## The cloud aspect
 
-Running on the cloud means users do not need to install anything or manage software dependencies. That alone removes a significant barrier, especially in interdisciplinary teams where not everyone has the same technical setup. But Hiplot goes further than just being a website.
+Running on the cloud means the platform lives on remote servers maintained by the Hiplot team, not on the user's own computer. Researchers connect through a browser, send their data, and get results back. The actual computation happens elsewhere. That alone removes a significant barrier: no installation, no dependency management, no worrying about whether the operating system is compatible.
 
-On the technical side, the platform uses a task execution strategy that keeps common dependencies preloaded in memory, so basic plots return results in seconds rather than making you wait for the environment to spin up from scratch each time. It also has a command line tool that mirrors the web interface, useful for researchers who want to automate batch processing while still using the same underlying logic.
+But what makes Hiplot a more interesting cloud example than just "it runs online" is how it handles the back end. When a task is submitted, the data is encoded and sent to a server where pre loaded R environments are waiting, with software dependencies already running in memory and ready to process the request. That is why basic plots come back in seconds rather than having to wait for an environment to spin up from scratch. The platform also has a command line tool that talks to the same back end, useful for researchers who want to automate batch processing without leaving the terminal.
 
-{: .box-note}
-**Reproducibility by design:** Each task is saved as a portable file recording the data, parameters, and output. You can reload it later and get the exact same figure, in the browser or from the terminal. For a research context where auditability matters, that is a thoughtful design choice.
+Reproducibility is handled by saving each task as a portable JSON file recording the data, parameters, and output path. It can be reloaded later to get the exact same figure, in the browser or from the command line. For research, where being able to retrace every step matters, that is a thoughtful design choice.
 
 ![Hiplot heatmap plugin workflow](/images/hiplot-heatmap-workflow.png){: .mx-auto.d-block :}
-*The heatmap plugin workflow: from data import and parameter setup in the browser (A), through the back end task processing pipeline (B), to the final publication ready output (C). It gives a good sense of how the full cycle — upload, configure, compute, retrieve — works in practice.*
+*The heatmap plugin workflow: from data import and parameter setup in the browser (A), through the back end task processing pipeline (B), to the final publication ready output (C). It gives a good sense of how the full cycle (upload, configure, compute, retrieve) works in practice.*
 
 ## The biomedical value
 
@@ -50,7 +49,7 @@ What I found most interesting is the clinical models section. Tools like surviva
 
 ## Final thoughts
 
-Hiplot is a good example of how cloud tools can serve scientific work in a practical way. It is not trying to replace statistical analysis or programming workflows. It sits at a specific point in the research process — after the data has been processed, before the manuscript is written — and makes that step faster and more accessible.
+Hiplot is a good example of how cloud tools can serve scientific work in a practical way. It is not trying to replace statistical analysis or programming workflows. It sits at a specific point in the research process, after the data has been processed and before the manuscript is written, and makes that step faster and more accessible.
 
 {: .box-note}
 **Usage:** Over 2.5 million visits from 100 countries by the end of 2021.
