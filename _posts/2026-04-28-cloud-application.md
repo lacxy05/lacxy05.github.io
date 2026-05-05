@@ -14,7 +14,7 @@ Biomedical research today is defined by data. Modern studies in genomics, transc
 
 ## What is Hiplot?
 
-[Hiplot](https://hiplot.cn/) is a web based platform for biomedical data visualization. In plain terms, it lets researchers upload tabular data and turn it into publication ready figures (heatmaps, boxplots, survival curves, pathway enrichment plots) without writing a single line of code. It currently offers over **240 visualization plugins** covering basic statistics, multi omics data, and clinical models.
+[Hiplot](https://hiplot.cn/) is a web based platform for biomedical data visualization. In plain terms, it lets researchers upload tabular data and generate publication-ready graphics (heatmaps, boxplots, survival curves, pathway enrichment plots) without requiring users to write analysis code for most visualization tasks. It currently offers over **240 visualization plugins** covering basic statistics, multi omics data, and clinical models.
 
 What makes it interesting from a cloud computing perspective is not just that it runs online, but *why* it was built that way and what specific problems that solves.
 
