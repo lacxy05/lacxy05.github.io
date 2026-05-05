@@ -8,7 +8,7 @@ author: Laia Colomé Xicoy
 ---
 
 {: .box-note}
-**Paper:** Chen T. et al., *Hiplot: a comprehensive and easy-to-use web-based visualization platform for biomedical research*, Briefings in Bioinformatics, 2022.
+**Paper:** Li, J. et al. (2022) "Hiplot: a comprehensive and easy-to-use web service for boosting publication-ready biomedical data visualization", *Briefings in Bioinformatics*, 23(4), p. bbac261. Available at: <https://doi.org/10.1093/bib/bbac261>.
 
 Biomedical research today is defined by data. Modern studies in genomics, transcriptomics, proteomics, and clinical science generate information at a scale that is difficult to manage with traditional desktop tools. In that setting, cloud based applications have become an important part of the research workflow. **Hiplot**, published in *Briefings in Bioinformatics* in 2022, is a paper that illustrates this nicely.
 
